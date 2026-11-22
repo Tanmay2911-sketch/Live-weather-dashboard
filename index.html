@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🌤 Weather Dashboard</h1>
+        <p class="subtitle">Check Real-Time Weather Anywhere</p>
+
+        <div class="search-box">
+            <input type="text" id="cityInput"
+                placeholder="Enter city name...">
+            <button id="searchBtn">Search</button>
+        </div>
+
+        <p id="error"></p>
+
+        <div class="weather-card" id="weatherCard">
+            <h2 id="cityName">Search Your City</h2>
+            <div id="weatherIcon">🌤️</div>
+            <h1 id="temperature">--°C</h1>
+            <p id="condition">Weather Condition</p>
+
+            <div class="details">
+                <div>
+                    <h3 id="humidity">--%</h3>
+                    <p>Humidity</p>
+                </div>
+                <div>
+                    <h3 id="wind">-- km/h</h3>
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="forecast-title">5 Day Forecast</h2>
+        <div class="forecast" id="forecast">
+            <p>Search a city to see forecast</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
